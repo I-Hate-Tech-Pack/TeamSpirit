@@ -1,0 +1,16 @@
+name: TeamSpirit
+description: $description
+version: '$version'
+
+main: cn.hwoxu.teamspirit.TeamSpirit
+api-version: '1.21.11'
+load: POSTWORLD
+
+authors: [ howxu ]
+
+commands:
+  teamspirit:
+    description: 用我的时间换大家的时间
+    usage: /teamspirit [TeamA Number] [TeamB Number]
+    permission:
+    permission-message:
