@@ -1,3 +1,4 @@
+import java.text.SimpleDateFormat
 import java.util.Date
 
 plugins {
@@ -45,7 +46,7 @@ tasks {
                 "Implementation-Title" to "TeamSpirit",
                 "Implementation-Version" to "${version}",
                 "Implementation-Vendor" to "TeamSpirit",
-                "Implementation-Timestamp" to Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+                "Implementation-Timestamp" to SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ").format(Date())
             )
         }
         from(sourceSets.main.get().allJava)
